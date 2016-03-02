@@ -1,0 +1,13 @@
+                                                ERROR LIST
+
+
+Erreur 1 : Vous avez essayé d'initialiser un vecteur avec dans une case inexistante.
+
+SOURCE : Vecteur3D.set_coord(indice, valeur)
+CAUSE : "indice" ne se situe pas entre 0 et 2
+
+
+Erreur 2 : Vous avez essayé de lire une valeur d'une une case inexistante du vecteur.
+
+SOURCE : Vecteur3D.get_coord(indice)
+CAUSE : "indice" ne se situe pas entre 0 et 2
