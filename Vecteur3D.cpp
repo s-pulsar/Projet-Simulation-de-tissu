@@ -10,23 +10,14 @@
 #include <iostream>
 #include <cmath>
 
-class Vecteur3D {
-
-    private :
     
-    std::array<double, 3> tableau = { 0, 0, 0 };
-    
-
-    
-    public :
-    
-    double return_coord(unsigned int indice) const {
+    double Vecteur3D::return_coord(unsigned int indice) const {
         
         return tableau[indice];
         
     }
     
-    void set_coord(unsigned int indice, double valeur) {
+    void Vecteur3D::set_coord(unsigned int indice, double valeur) {
         
         if (indice > 2) {
             
@@ -39,7 +30,7 @@ class Vecteur3D {
         
     }
     
-    void get_coord(unsigned int indice, double& valeur) const {
+    void Vecteur3D::get_coord(unsigned int indice, double& valeur) const {
         
         if (indice > 2) {
             
@@ -54,13 +45,13 @@ class Vecteur3D {
     
   
     
-    void affiche() const {
+    void Vecteur3D::affiche() const {
         
         std::cout << tableau[0] << "  " << tableau[1] << "  " << tableau[2] << std::endl;
         
     }
     
-    bool compare(Vecteur3D vecteur1) const {
+    bool Vecteur3D::compare(Vecteur3D vecteur1) const {
         
         for (unsigned int indice = 0; indice <= 2; indice++) {
         
@@ -72,7 +63,7 @@ class Vecteur3D {
         
     }
     
-    Vecteur3D addition(Vecteur3D autre) const {
+    Vecteur3D Vecteur3D::addition(Vecteur3D autre) const {
         
         Vecteur3D temp;
         
@@ -86,7 +77,7 @@ class Vecteur3D {
         
     }
     
-    Vecteur3D soustraction(Vecteur3D autre) const {
+    Vecteur3D Vecteur3D::soustraction(Vecteur3D autre) const {
         
         Vecteur3D temp;
         
@@ -100,7 +91,7 @@ class Vecteur3D {
         
     }
     
-    Vecteur3D oppose() {
+    Vecteur3D Vecteur3D::oppose() const {
         
         Vecteur3D temp;
         
@@ -114,7 +105,7 @@ class Vecteur3D {
         
     }
     
-    Vecteur3D mult(double nb) {
+    Vecteur3D Vecteur3D::mult(double nb) const  {
         
         Vecteur3D temp;
         
@@ -128,7 +119,7 @@ class Vecteur3D {
         
     }
     
-    double prod_scal (Vecteur3D vecteur2) const {
+    double Vecteur3D::prod_scal (Vecteur3D vecteur2) const {
         
         double produit(0);
         
@@ -142,7 +133,7 @@ class Vecteur3D {
         
     }
     
-    Vecteur3D prod_vect(Vecteur3D vecteur2) const {
+    Vecteur3D Vecteur3D::prod_vect(Vecteur3D vecteur2) const {
         
         Vecteur3D temp;
         
@@ -154,7 +145,7 @@ class Vecteur3D {
         
     }
     
-    double norme() {
+    double Vecteur3D::norme() const {
         
         double n(0);
         
@@ -164,7 +155,7 @@ class Vecteur3D {
         
     }
     
-    double norme2() {
+    double Vecteur3D::norme2() const {
         
         double n(0);
         
@@ -173,5 +164,3 @@ class Vecteur3D {
         return n;
         
     }
-
-};
