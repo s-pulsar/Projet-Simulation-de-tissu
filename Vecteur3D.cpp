@@ -76,7 +76,7 @@ class Vecteur3D {
         
         Vecteur3D temp;
         
-        for (size_t indice = 0; indice <= 2; indice++) {
+        for (unsigned int indice = 0; indice <= 2; indice++) {
             
             temp.set_coord(indice, tableau[indice] + autre.return_coord(indice));
             
@@ -90,7 +90,7 @@ class Vecteur3D {
         
         Vecteur3D temp;
         
-        for (size_t indice = 0; indice <= 2; indice++) {
+        for (unsigned int indice = 0; indice <= 2; indice++) {
             
             temp.set_coord(indice, tableau[indice] - autre.return_coord(indice));
             
@@ -104,7 +104,7 @@ class Vecteur3D {
         
         Vecteur3D temp;
         
-        for (size_t indice = 0; indice <= 2; indice++) {
+        for (unsigned int indice = 0; indice <= 2; indice++) {
             
             temp.set_coord(indice, (-1)*tableau[indice]);
             
@@ -118,7 +118,7 @@ class Vecteur3D {
         
         Vecteur3D temp;
         
-        for (size_t indice = 0; indice <= 2; indice++) {
+        for (unsigned int indice = 0; indice <= 2; indice++) {
             
             temp.set_coord(indice, nb*tableau[indice]);
             
@@ -132,7 +132,7 @@ class Vecteur3D {
         
         double produit(0);
         
-        for (size_t indice = 0; indice <= 2; indice++) {
+        for (unsigned int indice = 0; indice <= 2; indice++) {
             
             produit += vecteur2.return_coord(indice) * tableau[indice];
             
