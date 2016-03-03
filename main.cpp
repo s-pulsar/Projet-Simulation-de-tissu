@@ -3,7 +3,6 @@
 //  Projet — Simulation de tissu
 //
 //  Created by Nicolas Le-Bel on 26.02.16.
-//  Copyright © 2016 Nicolas Le-Bel. All rights reserved.
 //
 
 #include <iostream>
