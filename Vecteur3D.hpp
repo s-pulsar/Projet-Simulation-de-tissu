@@ -21,8 +21,10 @@ class Vecteur3D {
     public :
     
     double return_coord(unsigned int indice) const;
-    void set_coord(unsigned int indice, double valeur);
     void get_coord(unsigned int indice, double& valeur) const;
+    
+    void set_coord(unsigned int indice, double valeur);
+    void mass_set_coord(double coord1, double coord2, double coord3);
     
     void affiche() const;
     bool compare(Vecteur3D vecteur1) const;

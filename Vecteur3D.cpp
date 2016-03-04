@@ -29,7 +29,15 @@
         else { tableau[indice] = valeur; }
         
     }
+
+void Vecteur3D::mass_set_coord(double coord0, double coord1, double coord2) {
     
+    tableau[0] = coord0;
+    tableau[1] = coord1;
+    tableau[2] = coord2;
+    
+}
+
     void Vecteur3D::get_coord(unsigned int indice, double& valeur) const {
         
         if (indice > 2) {
