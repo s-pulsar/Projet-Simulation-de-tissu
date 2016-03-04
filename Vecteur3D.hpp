@@ -5,8 +5,8 @@
 //  Created by Nicolas Le-Bel on 02.03.16.
 //
 
-#ifndef Vecteur3D_hpp
-#define Vecteur3D_hpp
+#ifndef PRJ_VECTEUR_H
+#define PRJ_VECTEUR_H
 
 #include <stdio.h>
 #include <array>
@@ -41,4 +41,4 @@ class Vecteur3D {
     
 };
 
-#endif /* Vecteur3D_hpp */
+#endif // PRJ_VECTEUR_H

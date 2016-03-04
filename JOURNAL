@@ -1,3 +1,6 @@
                                 JOURNAL DE BORD — PROJET DE PROGRAMMATION 2016
 
 26/02 — Prise de connaissance du projet.
+02/03 - Ecriture de la classe Vecteur3D, création des fichiers .cpp, .hpp correspondants et des fichiers
+        testVecteur3D.
+04/03 - Création du makefile.
